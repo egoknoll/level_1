@@ -237,9 +237,9 @@
     justify-content: center;
     cursor: pointer;
     position: relative;
-}
-.work__content:active{
-    background: rgba(185, 12, 12, 1);
+    &:active{
+        background: rgba(185, 12, 12, 1);
+    }
 }
 .work__image-1{
     background-image: url(/src/images/work_1.png);
@@ -247,9 +247,9 @@
     height: 100%;
     position: absolute;
     background-size: cover;
-}
-.work__image-1:hover{
-    opacity: 20%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__image-2{
     background-image: url(/src/images/work_2.png);
@@ -257,9 +257,9 @@
     height: 100%;
     position: absolute;
     background-size: cover;
-}
-.work__image-2:hover{
-    opacity: 15%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__image-3{
     background-image: url(/src/images/work_3.png);
@@ -267,9 +267,9 @@
     height: 100%;
     position: absolute;
     background-size: cover;
-}
-.work__image-3:hover{
-    opacity: 15%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__image-4{
     background-image: url(/src/images/work_4.png);
@@ -277,9 +277,9 @@
     height: 100%;
     position: absolute;
     background-size: cover;
-}
-.work__image-4:hover{
-    opacity: 15%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__image-5{
     background-image: url(/src/images/work_5.png);
@@ -287,9 +287,9 @@
     height: 100%;
     position: absolute;
     background-size: cover;
-}
-.work__image-5:hover{
-    opacity: 15%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__image-6{
     background-image: url(/src/images/work_6.png);
@@ -297,9 +297,9 @@
     height: 100%;
     position: absolute;
     background-size: cover;
-}
-.work__image-6:hover{
-    opacity: 15%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__image-7{
     background-image: url(/src/images/work_7.png);
@@ -307,9 +307,9 @@
     height: 100%;
     position: absolute;
     background-size: cover;
-}
-.work__image-7:hover{
-    opacity: 15%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__image-8{
     background-image: url(/src/images/work_8.png);
@@ -317,9 +317,9 @@
     width: 100%;
     height: 100%;
     position: absolute;
-}
-.work__image-8:hover{
-    opacity: 15%;
+    &:hover{
+        opacity: 20%;
+    }
 }
 .work__title{
     font-family: 'Raleway';
@@ -409,15 +409,17 @@
 }
 .team__icon-cell{ 
     svg{ fill: #C6CBCD}
-}
-.team__icon-cell:hover .facebook-icon{
-    fill: #3b5998
-}
-.team__icon-cell:hover .twitter-icon{
-    fill: #1c96e8
-}
-.team__icon-cell:hover .linkedin-icon{
-    fill: #000000
+    &:hover{
+        .facebook-icon{
+            fill: #3b5998
+        }
+        .twitter-icon{
+            fill: #1c96e8; 
+        }
+        .linkedin-icon{
+            fill: #000000;
+        }
+    }
 }
 .slider{
     margin-top: 100px;
