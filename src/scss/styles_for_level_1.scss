@@ -45,14 +45,13 @@
     color: #FFFFFF;
     cursor: pointer;
     text-decoration: none;
-
-}
-.nav__navigation-button:hover{
-    border-bottom: 3px solid #BABBC5;
-}
-.nav__navigation-button:active{
-    border-bottom: 3px solid #E71414;
-    color: #E71414;
+    &:hover{
+        border-bottom: 3px solid #BABBC5;
+    }
+    &:active{
+        border-bottom: 3px solid #E71414;
+        color: #E71414;
+    }
 }
 .nav__mobile-menu{
     position: absolute;
@@ -73,39 +72,43 @@
     background-color: #FFFFFF;
     position: relative;
     z-index: 5;
-}
-.nav__bar::after, .nav__bar::before{
-    content: '';
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    transition: 0.5s;
-    background-color: #FFFFFF;
-}
-.nav__bar::after{
-    transform: translateY(10px);
-}
-.nav__bar::before{
-    transform: translateY(20px);
+    &::after{
+        content: '';
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        transition: 0.5s;
+        background-color: #FFFFFF;
+        transform: translateY(10px);
+    }
+    &::before{
+        content: '';
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        transition: 0.5s;
+        background-color: #FFFFFF;
+        transform: translateY(20px);
+    }
 }
 .banner{
     margin: 0 auto;
     min-height: 747px;
     position: relative;
     background-color: rgba(37,43,73,0.8);
-}
-.banner::after{
-    content: '';
-    display: block;
-    min-height: 747px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: -4;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(/src/images/banner_background.png);
+    &::after{
+        content: '';
+        display: block;
+        min-height: 747px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/src/images/banner_background.png);
+    }
 }
 .banner__wrapper{
     margin: 0 auto;
@@ -162,13 +165,13 @@
     border: none;
     color: #FFFFFF;
     cursor: pointer;
-}
-.banner__button:hover{
-    background-color: #E71414;
-}
-.banner__button:active{
-    background-color: #FF4343;
-    box-shadow: 4px 4px 30px #FF4343;
+    &:hover{
+        background-color: #E71414;
+    }
+    &:active{
+        background-color: #FF4343;
+        box-shadow: 4px 4px 30px #FF4343;
+    }
 }
 .features{
     margin-top: 100px;
